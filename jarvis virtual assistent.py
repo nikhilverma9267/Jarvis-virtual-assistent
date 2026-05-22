@@ -37,7 +37,7 @@ if __name__=="__main__":
               print("listening .....!")
               audio = r.listen(source, timeout=8, phrase_time_limit=1)
            word = r.recognize_google(audio)
-           if(word.lower() == "hello"):
+           if(word.lower() == "jarvis"):
               speak("ha bolo")
               #listen for commond
               with sr.Microphone() as source:
